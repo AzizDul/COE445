@@ -1,0 +1,1 @@
+A single-page application in plain HTML and JavaScript.
