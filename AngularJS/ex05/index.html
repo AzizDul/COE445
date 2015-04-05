@@ -1,0 +1,24 @@
+<!doctype html>
+<html ng-app="myApp">
+    <head>
+        <script type="text/javascript" src="../angular.min.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+    </head>
+    <body>
+		
+		<!-- Simple View -->
+		
+        <div ng-controller="courseController">
+			<h1>There are {{courses.length}} courses available!!</h1>
+			<ul>
+				<li ng-repeat="course in courses">{{course.name}}</li>
+			</ul>
+
+			<form ng-submit="addNewCourse()">
+				<input type="text" placeholder="Enter course name" ng-model="CourseName">
+				<button type="submit">Add</button>
+			</form>
+		</div>
+    
+	</body>
+</html>

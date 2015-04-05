@@ -1,0 +1,1 @@
+An angular app with a view that shows the number of courses.

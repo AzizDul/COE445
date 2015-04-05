@@ -1,0 +1,19 @@
+<!doctype html>
+<html ng-app="myApp">
+    <head>
+        <script type="text/javascript" src="../angular.min.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+    </head>
+    <body>
+		
+		<!-- Simple View -->
+		
+        <div ng-controller="courseController">
+			<h1>There are {{NumberCourses}} courses available!!</h1>
+			<ul>
+				<li ng-repeat="course in courses">{{course.name}}</li>
+			</ul>
+		</div>
+    
+	</body>
+</html>
