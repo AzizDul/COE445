@@ -1,0 +1,13 @@
+<!doctype html>
+<html ng-app>
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="../angular.min.js"></script>
+    <title>A Simple SPA</title>
+  </head>
+  <body ng-init="names=['Yahya', 'Khaled', 'Ahmad', 'Ali', 'Kamal']">
+  	Search: <input type="text" ng-model="searchText" />
+  	<h1>Names:</h1>
+  	<ul> <li ng-repeat="name in names | filter:searchText"> {{ name }} </li> </ul>
+  </body>
+</html>
