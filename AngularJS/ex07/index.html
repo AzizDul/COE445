@@ -1,0 +1,24 @@
+<!doctype html>
+<html ng-app="routingApp">
+
+<head>
+   <title>AngularJS Routing</title>
+   <script src="/lib/angular.min.js"></script>
+	<script src="/lib/angular-route.min.js"></script>
+	<script src="client.js"></script>
+</head>
+
+<body>
+
+<h1> Welcome to My SPA! </h1>
+
+   <div>
+		<p> | <a href="#/home">Home</a> | <a href="#/about">About</a> | </p>
+   </div>
+
+	
+	<div ng-view></div>
+
+
+</body>
+</html>
